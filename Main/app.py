@@ -6,6 +6,7 @@ pasted email.
 """
 
 import re
+from pathlib import Path
 
 import joblib
 import numpy as np
@@ -44,9 +45,11 @@ REQUIRED_COLUMNS = ["text", "has_attachments", "url_count", "urls"]
 
 URL_PATTERN = re.compile(r'(https?://[^\s<>"\')\]]+|www\.[^\s<>"\')\]]+)', re.IGNORECASE)
 
+BASE_DIR = Path(__file__).resolve().parent
+
 MODEL_FILES = {
-    "Lite": {"path": "Aetheris-Lite.joblib", "family": "SGD, linear"},
-    "NexusVector-X": {"path": "NexusVector-X.joblib", "family": "XGBoost, gradient-boosted trees"},
+    "Lite": {"path": BASE_DIR, "family": "SGD, linear"},
+    "NexusVector-X": {"path": BASE_DIR, "family": "XGBoost, gradient-boosted trees"},
 }
 
 LOW_CONFIDENCE_THRESHOLD = 0.60
