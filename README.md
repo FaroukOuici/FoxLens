@@ -6,7 +6,7 @@ two independent models trained on the same data:
 - **Aetheris-Lite** — SGD (linear), fast, tuned for high precision.
 - **NexusVector-X** — XGBoost (gradient-boosted trees), stronger recall on phishing.
 
-Try it live: **[add your Streamlit Cloud URL here after deployment]**
+Try it live: **[foxlens-btjedlx5wjw3igdbzdxttw.streamlit.app]**
 
 ## How it works
 
