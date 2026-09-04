@@ -48,8 +48,8 @@ URL_PATTERN = re.compile(r'(https?://[^\s<>"\')\]]+|www\.[^\s<>"\')\]]+)', re.IG
 BASE_DIR = Path(__file__).resolve().parent
 
 MODEL_FILES = {
-    "Lite": {"path": BASE_DIR, "family": "SGD, linear"},
-    "NexusVector-X": {"path": BASE_DIR, "family": "XGBoost, gradient-boosted trees"},
+    "Lite": {"path": BASE_DIR / "Aetheris-Lite.joblib", "family": "SGD, linear"},
+    "NexusVector-X": {"path": BASE_DIR / "NexusVector-X.joblib", "family": "XGBoost, gradient-boosted trees"},
 }
 
 LOW_CONFIDENCE_THRESHOLD = 0.60
