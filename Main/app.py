@@ -1,4 +1,4 @@
- """
+"""
 FoxLens — Phishing Email Classifier Demo Interface.
 Loads Aetheris-Lite (SGD) and NexusVector-X (XGBoost), wrapped in a
 fixed-threshold classifier, letting visitors test emails and compare models.
